@@ -1,4 +1,4 @@
-## Getting Started
+## Spring Cassandra Module
  Goto docker directory and run 
  
  ```docker-compose up -d```
@@ -21,4 +21,14 @@
 cqlsh> select * from userdb.user;
 ```
  
-### Reference Documentation
+## Spring Spark Module
+Post endpoint .../words/count
+returns the count of all words passed in as body JSON array
+
+```Ex: ["Vinay","May","Vinay","John","Vinay","Joe","Vinay","Steve"]```
+
+Post endpoint .../words/count/Vinay
+returns the count of matching occurrences of word in the path 
+from body JSON names array
+
+```Ex: ["Vinay","May","Vinay","John","Vinay","Joe","Vinay","Steve"]```
