@@ -1,0 +1,8 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//    }
+//}
+rootProject.name = 'spring-demo'
+include 'spring-cassandra'
+

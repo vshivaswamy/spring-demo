@@ -1,0 +1,8 @@
+ext {
+    lombak_version = "1.18.6"
+
+    commonDependencies = [
+            lombak: "org.projectlombok:lombok:$lombak_version",
+            jUnit             : 'junit:junit:4.12'
+    ]
+}

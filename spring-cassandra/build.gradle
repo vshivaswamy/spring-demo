@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+}
+
+group 'io.vinays.cassandra'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-cassandra'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+    }
+}
